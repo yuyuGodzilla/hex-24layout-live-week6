@@ -1,3 +1,20 @@
-.index-title {
-  font-size: 100px;
+.p-index-banner{
+  
+  &__body{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner-sm.png?raw=true);
+    height: calc(100vh - 65px);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-bottom: 48px;
+    @include media-breakpoint-up(lg) {
+      // 當視窗寬度大於等於 "md" (768px) 時應用的樣式
+      height: auto;
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner.png?raw=true);
+
+      padding-left: 61px;
+      padding-top: 228px;
+      padding-bottom: 229px;
+    }
+  }
 }

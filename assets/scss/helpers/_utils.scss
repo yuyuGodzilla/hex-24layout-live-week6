@@ -1,0 +1,50 @@
+// .font-newsreader{
+//     font-family: "Newsreader" !important;
+// }
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+      "overflow-x":
+      map-merge(
+        map-get($utilities, "overflow-x"),
+        (
+          responsive: true,
+        )
+      ),
+    // "background-color":
+    //   map-merge(
+    //     map-get($utilities, "background-color"),
+    //     (
+    //       responsive: true,
+    //     )
+    //   ),
+    "rounded-top-left": (
+      property: border-top-left-radius,
+      class: rounded-top-left,
+      values: (
+        1: $border-radius-xxl,
+      ),
+    ),
+    "rounded-bottom-right": (
+      property: border-bottom-right-radius,
+      class: rounded-bottom-right,
+      values: (
+        1: $border-radius-xxl,
+      ),
+    ),
+    "font-newsreader": (
+      property: font-family,
+      class: font-newsreader,
+      values: (
+        null: "Newsreader",
+      ),
+    ),
+  )
+);

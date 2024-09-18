@@ -1,0 +1,56 @@
+.topic-card {
+  position: relative;
+  &:hover {
+    &::after {
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      background-color: #21252966;
+      border-top-left-radius: var(--bs-border-radius-xxl);
+      border-bottom-right-radius: var(--bs-border-radius-xxl);
+      z-index: 10;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+}
+
+.project-card{
+
+    &__body{
+        position: relative;
+    }
+
+    &__badge{
+        position: absolute;
+        top: -18px;
+        left: 16px;
+        background-color: white;
+        z-index: 1000;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    &__link{
+        width: calc(100% - 24px);
+        position: absolute;
+        bottom: 16px;
+        left:12px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
