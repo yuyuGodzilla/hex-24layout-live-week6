@@ -18,6 +18,13 @@ $utilities: map-merge(
           responsive: true,
         )
       ),
+      "color":
+      map-merge(
+        map-get($utilities, "color"),
+        (
+          responsive: true,
+        )
+      ),
     // "background-color":
     //   map-merge(
     //     map-get($utilities, "background-color"),

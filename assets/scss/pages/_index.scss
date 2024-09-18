@@ -1,6 +1,5 @@
-.p-index-banner{
-  
-  &__body{
+.p-index-banner {
+  &__body {
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner-sm.png?raw=true);
     height: calc(100vh - 65px);
     background-repeat: no-repeat;
@@ -16,5 +15,66 @@
       padding-top: 228px;
       padding-bottom: 229px;
     }
+  }
+}
+
+
+
+.p-index-subscription {
+  &__wrap {
+    position: relative;
+    // 偽元素要超出容器
+    overflow: hidden;
+    @include media-breakpoint-up(lg){
+      overflow: visible;
+    }
+    &::before {
+      @include media-breakpoint-up(lg) {
+        content: "";
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-1.png?raw=true);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 217px;
+        height: 81px;
+        z-index: 1000;
+      }
+    }
+
+    &::after {
+      content: "";
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-2-sm.png?raw=true);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 0;
+      right: -50px;
+      width: 160px;
+      height: 104px;
+      z-index: 1000;
+      @include media-breakpoint-up(lg){
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-2.png?raw=true);
+        width: 300px;
+        height: 196px;
+        
+      }
+      
+    }
+  }
+}
+
+.p-index-itinerary{
+
+  .card{
+    box-shadow: 0px 2px 8px 0px #6E6B6714;
+  }
+}
+
+.p-index-lifeStyle {
+  .card-img-top {
+    height: 192px;
+    object-fit: cover;
   }
 }

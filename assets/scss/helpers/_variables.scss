@@ -710,8 +710,10 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
 
+  // myCustom
+  7: $font-size-base * 3.25, // 52
   
 ) !default;
 // scss-docs-end font-sizes
@@ -1262,8 +1264,14 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+// $nav-link-color:                    var(--#{$prefix}link-color) !default;
+// myCustom
+$nav-link-color:                    #212529 !default;
+
+// $nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+// myCustom
+$nav-link-hover-color:              #569573 !default;
+
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           var(--#{$prefix}secondary-color) !default;
 $nav-link-focus-box-shadow:         $focus-ring-box-shadow !default;
@@ -1277,8 +1285,13 @@ $nav-tabs-link-active-bg:           var(--#{$prefix}body-bg) !default;
 $nav-tabs-link-active-border-color: var(--#{$prefix}border-color) var(--#{$prefix}border-color) $nav-tabs-link-active-bg !default;
 
 $nav-pills-border-radius:           var(--#{$prefix}border-radius) !default;
-$nav-pills-link-active-color:       $component-active-color !default;
-$nav-pills-link-active-bg:          $component-active-bg !default;
+// $nav-pills-link-active-color:       $component-active-color !default;
+//myCustom
+$nav-pills-link-active-color:       #212529 !default;
+
+// $nav-pills-link-active-bg:          $component-active-bg !default;
+// myCustom
+$nav-pills-link-active-bg:          #E0EFDE !default;
 
 $nav-underline-gap:                 1rem !default;
 $nav-underline-border-width:        .125rem !default;

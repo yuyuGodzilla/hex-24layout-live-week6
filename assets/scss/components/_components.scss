@@ -54,3 +54,30 @@
         justify-content: space-between;
     }
 }
+
+.my-pagination{
+    display: flex;
+    gap: 120px;
+
+    &__btn{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border: 1px solid #6C757D;
+    }
+    &__prev{
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 80px;
+            background-color: #6C757D;
+            left: calc( 100% + 20px);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
