@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>第6週主線任務-內容訂閱網站</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第6週主線任務-內容訂閱網站</title>
 
-  <!-- Material Symbols -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <script type="module" crossorigin src="/hex-24layout-live-week6/assets/main-4e7be71c.js"></script>
-  <link rel="stylesheet" href="/hex-24layout-live-week6/assets/main-e32bd4f7.css">
+  <script type="module" crossorigin src="/hex-24layout-live-week6/assets/main-707eebb4.js"></script>
+  <link rel="stylesheet" href="/hex-24layout-live-week6/assets/main-ee4b1c42.css">
 </head>
 
 <body>
-  <header class="l-header">
+    <header class="l-header">
     <div class="container">
         <nav class="navbar navbar-expand-lg px-2 px-lg-0 py-3 py-lg-8 border-bottom">
             <a class="navbar-brand" href="./index.html">
@@ -66,16 +66,107 @@
         </nav>
     </div>
 </header>
-    <main class="p-post">
-      <h1>我是post文章</h1>
-    </main>
+        <main class="p-post">
+            <div class="p-post-banner">
+                <div class="container">
+                    <picture>
+                        <source media="(min-width: 992px)"
+                            srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/article-banner.png?raw=true">
+                        <img class="img-fluid w-100"
+                            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/article-banner-sm.png?raw=true"
+                            alt="article-banner">
+                    </picture>
+                </div>
+            </div>
+            <div class="pt-9 pb-11 pt-lg-12 pb-lg-15">
+                <section class="p-post-article mb-11 mb-lg-15">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="mb-9">
+                                    <nav class="mb-1 mb-lg-5" aria-label="breadcrumb">
+                                        <ol class="breadcrumb py-3">
+                                            <li class="breadcrumb-item"><a class="link-gray-400 fw-semibold" href="./index.html">首頁</a></li>
+                                            <li class="breadcrumb-item"><a class="link-gray-400 fw-semibold" href="./post.html">所有文章</a></li>
+                                            <li class="breadcrumb-item active text-secondary-200" aria-current="page fw-semibold">私人島嶼的露營奇遇記</li>
+                                        </ol>
+                                    </nav>
+                                    <h1 class="fs-4 fs-lg-1 mb-2 mb-lg-4">私人島嶼的露營奇遇記</h1>
+                                    <h6 class="text-gray-300 fw-bold">2024 / 5 / 1</h6>
+                                </div>
+                                <div class="p-post-article__overlay mb-6 mb-lg-9">
+                                    <p class="mb-6 mb-lg-9">嗨！我是秘境尋蹤小編 Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。</p>
+                                    <p class="mb-6 mb-lg-9">這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。</p>
+                                    <picture>
+                                        <source media="(min-width: 992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/content-1.png?raw=true">
+                                        <img class="img-fluid w-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/content-1-sm.png?raw=true" alt="content">
+                                    </picture>
+                                </div>
+                                <div id="post-btn-wrap" class="text-center">
+                                    <h5 class="mb-3 mb-lg-4">本篇為會員專屬文章<br class="d-lg-none"><span class="d-none d-lg-inline">，</span>馬上訂閱瀏覽所有內容！</h5>
+                                    <button id="post-btn-overlay" type="button" class="btn btn-secondary-200 text-white fs-lg-5">我要訂閱<span
+                                        class="material-symbols-outlined ms-3" style="vertical-align: sub;">
+                                        east
+                                      </span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="p-post-extendedReading">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="fs-4 fs-lg-2 mb-5 mb-lg-9">延伸閱讀</h2>
 
-    <footer class="l-footer">
+                                <ul class="list-unstyled">
+                                    <li class="p-post-extendedReading__card d-flex flex-column flex-lg-row gap-lg-6 mb-9">
+                                        <picture class="flex-shrink-0">
+                                            <source media="(min-width: 992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-1.png?raw=true">
+                                            <img class="img-fluid w-100 mb-4 mb-lg-6" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-1-sm.png?raw=true" alt="read">
+                                        </picture>
+                                        <div class="mb-6 mb-lg-0">
+                                            <h4 class="fs-5 mb-2">週末說走就走露營記</h4>
+                                            <p class="text-gray-400 mb-3">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...</p>
+                                            <a href="#" class="d-block text-end link-secondary-200 fs-5 font-newsreader">Read More</a>
+                                        </div>
+                                    </li>
+                                    <li class="p-post-extendedReading__card d-flex flex-column flex-lg-row gap-lg-6 mb-9">
+                                        <picture class="flex-shrink-0">
+                                            <source media="(min-width: 992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-2.png?raw=true">
+                                            <img class="img-fluid w-100 mb-4 mb-lg-6" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-2-sm.png?raw=true" alt="read">
+                                        </picture>
+                                        <div class="mb-6 mb-lg-0">
+                                            <h4 class="fs-5 mb-2">城市野營日記</h4>
+                                            <p class="text-gray-400 mb-3">終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...</p>
+                                            <a href="#" class="d-block text-end link-secondary-200 fs-5 font-newsreader">Read More</a>
+                                        </div>
+                                    </li>
+                                    <li class="p-post-extendedReading__card d-flex flex-column flex-lg-row gap-lg-6">
+                                        <picture class="flex-shrink-0">
+                                            <source media="(min-width: 992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-3.png?raw=true">
+                                            <img class="img-fluid w-100 mb-4 mb-lg-6" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/read-3-sm.png?raw=true" alt="read">
+                                        </picture>
+                                        <div class="mb-6 mb-lg-0">
+                                            <h4 class="fs-5 mb-2">和寵物去露營 - 大自然之旅的雙倍體驗</h4>
+                                            <p class="text-gray-400 mb-3">說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...</p>
+                                            <a href="#" class="d-block text-end link-secondary-200 fs-5 font-newsreader">Read More</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="l-footer">
     <div class="container">
         <div class="py-5 py-lg-6 text-center text-primary-400 border-top border-gray-300">©Vivre 2024 All right Reserved</div>
     </div>
 </footer>
-      
+            
 </body>
 
 </html>
