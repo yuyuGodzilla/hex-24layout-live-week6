@@ -1,0 +1,18 @@
+.p-about-banner{
+    &__image{
+        height: 240px;
+        object-fit: cover;
+        @include media-breakpoint-up(lg){
+            height: 454px;
+        }
+    }
+}
+
+.p-about-history{
+    &__listMonth{
+        width: 40px;
+        @include media-breakpoint-up(lg){
+            width: 60px;
+        }
+    }
+}
