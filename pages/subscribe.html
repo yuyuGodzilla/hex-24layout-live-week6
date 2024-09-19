@@ -16,8 +16,123 @@
 <body>
   <%- include('./layout/header'); -%>
 
-    <main class="p-subscribe">
-      <h1>我是subscribe 訂閱</h1>
+    <main class="p-subscribe pt-4 pb-11 pt-lg-15 pb-lg-15">
+      <div class="container">
+        <nav class="mb-2 mb-lg-5" aria-label="breadcrumb">
+          <ol class="breadcrumb py-3">
+            <li class="breadcrumb-item"><a href="./index.html" class="link-gray-400">首頁</a></li>
+            <li class="breadcrumb-item active text-secondary-200" aria-current="page">訂閱方案</li>
+          </ol>
+        </nav>
+        <h1 class="fs-3 fs-lg-1 mb-9 mb-lg-11">訂閱方案</h1>
+        <div class="row gx-0 gx-lg-6 justify-content-center mb-6 mb-lg-9">
+          <div class="col-6 col-lg-2">
+            <button type="button" class="w-100 text-white py-3 bg-secondary-200 border-0">年繳</button>
+          </div>
+          <div class="col-6 col-lg-2">
+            <button type="button"
+              class="p-subscribe__monthly-btn w-100 text-gray-400 py-3 bg-transparent border-0">月繳</button>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 g-6">
+          <div class="col">
+            <div
+              class="p-subscribe-planCard p-6 p-lg-9 bg-white border border-primary-300 rounded rounded-4 h-100 d-flex flex-column">
+              <div class="text-center pb-0 pb-lg-9 mb-8 mb-lg-11">
+                <h5 class="mb-4 text-gray-400 fs-lg-5">輕量型</h5>
+                <h2 class="fs-2 fs-lg-1 text-gray-400">NT 99<span class="fs-5 fs-lg-4 ms-4">/ 月</span></h2>
+              </div>
+              <ul class="list-unstyled">
+                <li class="text-gray-400 fs-lg-5 mb-6"><span class="material-symbols-outlined me-2"
+                    style="vertical-align: sub;">
+                    check_box
+                  </span>每月最新文章無限閱讀</li>
+                <li class="text-gray-400 fs-lg-5 mb-6"><span class="material-symbols-outlined me-2"
+                    style="vertical-align: sub;">
+                    check_box
+                  </span>專屬會員限定內容</li>
+                <li class="text-gray-400 fs-lg-5 mb-11 mb-lg-0"><span class="material-symbols-outlined me-2"
+                    style="vertical-align: sub;">
+                    check_box
+                  </span>定期電子報</li>
+              </ul>
+              <a href="./payment.html" class="btn btn-light w-100 link-gray-400 mt-auto">我要訂閱<span
+                  class="material-symbols-outlined ms-3">
+                  east
+                </span></a>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-subscribe-planCard p-6 p-lg-9 bg-white border border-primary-300 rounded rounded-4 h-100 d-flex flex-column">
+              <div class="text-center pb-0 pb-lg-9 mb-8 mb-lg-11">
+                <h5 class="mb-4 text-gray-400 fs-lg-5">玩咖型</h5>
+                <h2 class="fs-2 fs-lg-1 text-gray-400">NT 159<span class="fs-5 fs-lg-4 ms-4">/ 月</span></h2>
+              </div>
+              <ul class="list-unstyled">
+                <li class="text-gray-400 fs-lg-5 mb-6"><span class="material-symbols-outlined me-2"
+                    style="vertical-align: sub;">
+                    check_box
+                  </span>每月最新文章無限閱讀</li>
+                <li class="text-gray-400 fs-lg-5 mb-6"><span class="material-symbols-outlined me-2"
+                    style="vertical-align: sub;">
+                    check_box
+                  </span>專屬會員限定內容</li>
+                <li class="text-gray-400 fs-lg-5 mb-6"><span class="material-symbols-outlined me-2"
+                    style="vertical-align: sub;">
+                    check_box
+                  </span>定期電子報</li>
+                <li class="text-gray-400 fs-lg-5 mb-11 mb-lg-0"><span class="material-symbols-outlined me-2"
+                    style="vertical-align: sub;">
+                    check_box
+                  </span>年度精選禮物</li>
+              </ul>
+              <a href="./payment.html" class="btn btn-light w-100 link-gray-400 mt-auto">我要訂閱<span
+                  class="material-symbols-outlined ms-3">
+                  east
+                </span></a>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="p-subscribe-planCard p-6 p-lg-9 bg-white border border-secondary-200 rounded rounded-4 h-100 d-flex flex-column">
+              <div class="text-center  mb-8 mb-lg-11">
+                <h5 class="mb-4 text-gray-400 fs-lg-5">家庭型</h5>
+                <h2 class="fs-2 fs-lg-1 text-secondary-200 mb-4">NT 599<span class="fs-5 fs-lg-4 ms-4 text-gray-300">/
+                    月</span></h2>
+                <h5 class="text-decoration-line-through text-gray-300">NT 899</h5>
+              </div>
+              <ul class="list-unstyled">
+                <li class=" fs-lg-5 mb-6"><span class="material-symbols-outlined me-2" style="vertical-align: sub;">
+                    check_box
+                  </span>每月最新文章無限閱讀</li>
+                <li class=" fs-lg-5 mb-6"><span class="material-symbols-outlined me-2" style="vertical-align: sub;">
+                    check_box
+                  </span>專屬會員限定內容</li>
+                <li class=" fs-lg-5 mb-6"><span class="material-symbols-outlined me-2" style="vertical-align: sub;">
+                    check_box
+                  </span>定期電子報</li>
+                <li class=" fs-lg-5 mb-6"><span class="material-symbols-outlined me-2" style="vertical-align: sub;">
+                    check_box
+                  </span>年度精選禮物</li>
+                <li class=" fs-lg-5 mb-6"><span class="material-symbols-outlined me-2" style="vertical-align: sub;">
+                    check_box
+                  </span>24/7 優先客戶服務</li>
+                <li class=" fs-lg-5 mb-6"><span class="material-symbols-outlined me-2" style="vertical-align: sub;">
+                    check_box
+                  </span>為每個成員量身打造專屬行程</li>
+                <li class=" fs-lg-5 mb-11"><span class="material-symbols-outlined me-2" style="vertical-align: sub;">
+                    check_box
+                  </span>最多 5 個家庭成員共享</li>
+              </ul>
+              <a href="./payment.html" class="btn btn-secondary-200 w-100 text-white mt-auto">我要訂閱<span
+                  class="material-symbols-outlined ms-3">
+                  east
+                </span></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <%- include('./layout/footer'); -%>

@@ -1,0 +1,11 @@
+.p-subscribe {
+  &__monthly-btn {
+    &:hover {
+      color: #569573 !important;
+    }
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 1;
+  }
+}

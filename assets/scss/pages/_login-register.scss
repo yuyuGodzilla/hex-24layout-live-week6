@@ -1,0 +1,39 @@
+.p-login {
+  &__horizon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #DEE2E6; 
+    }
+    &::before{
+        margin-right: 10px;
+    }
+    &::after{
+        margin-left: 10px;
+    }
+  }
+}
+
+.p-register {
+    &__horizon {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      &::before,
+      &::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #DEE2E6; 
+      }
+      &::before{
+          margin-right: 10px;
+      }
+      &::after{
+          margin-left: 10px;
+      }
+    }
+  }
