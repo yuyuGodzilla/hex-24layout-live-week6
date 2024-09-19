@@ -11,8 +11,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <script type="module" crossorigin src="/hex-24layout-live-week6/assets/main-707eebb4.js"></script>
-  <link rel="stylesheet" href="/hex-24layout-live-week6/assets/main-ee4b1c42.css">
+  <script type="module" crossorigin src="/hex-24layout-live-week6/assets/main-1d603585.js"></script>
+  <link rel="stylesheet" href="/hex-24layout-live-week6/assets/main-8cad92f4.css">
 </head>
 
 <body>
@@ -66,9 +66,39 @@
         </nav>
     </div>
 </header>
-    <main class="p-register">
-      <h1>我是register註冊</h1>
-    </main>
+  <main class="p-register py-11 py-lg-15">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <form class="bg-white p-6 p-lg-9">
+            <h1 class="fs-4 text-secondary-200 mb-6 mb-lg-9">註冊</h1>
+            <div class="mb-4">
+              <label for="registerAccount" class="form-label fw-bold mb-2 mb-lg-3">會員帳號</label>
+              <input type="text" class="form-control bg-light" id="registerAccount" placeholder="請輸入會員帳號">
+            </div>
+            <div class="mb-4">
+              <label for="registerPassword" class="form-label fw-bold mb-2 mb-lg-3">密碼</label>
+              <input type="password" class="form-control bg-light" id="registerPassword" placeholder="請輸入密碼">
+            </div>
+            <div class="mb-6 mb-lg-9">
+              <label for="registerEmail" class="form-label fw-bold mb-2 mb-lg-3">電子信箱</label>
+              <input type="email" class="form-control bg-light" id="registerEmail" placeholder="請輸入電子信箱">
+            </div>
+            <button type="submit" class="btn btn-secondary-200 text-white w-100  mb-6 mb-lg-9">立即註冊<span class="material-symbols-outlined ms-3 ">
+              east
+              </span></button>
+              <p class="p-register__horizon text-gray-300 mb-6 mb-lg-9">或以其他方式註冊</p>
+              <a href="#" class="btn btn-light w-100 mb-2" type="button"><img class="me-3" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-google.png?raw=true" alt="google" style="vertical-align: sub;">使用 Google 註冊</a>
+              <a href="#" class="btn btn-light w-100 mb-6 mb-lg-9" type="button"><img class="me-3" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/icons-facebook.png?raw=true" alt="FB" style="vertical-align: sub;">使用 Facebook 註冊</a>
+              <div class="d-flex justify-content-center gap-3">
+                <p>已經是會員了？  </p>
+                <a href="./login.html" class="link-secondary-200">點此登入</a>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
 
     <footer class="l-footer">
     <div class="container">
